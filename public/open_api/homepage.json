@@ -1,0 +1,16 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "Homepage APIs",
+    "description": "API documentation of Rails Application. <br/>Optional multiline or single-line Markdown-formatted description in [CommonMark](http://spec.commonmark.org/) or `HTML`.",
+    "version": "1.0.0"
+  },
+  "security": null,
+  "tags": [
+
+  ],
+  "paths": {
+  },
+  "components": {
+  }
+}
