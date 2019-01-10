@@ -9,4 +9,6 @@ class Movie < ApplicationRecord
 
   has_many :movie_producers
   has_many :producers, through: :movie_producers
+
+  accepts_nested_attributes_for :movie_actors, :movie_directors, :movie_producers, allow_destroy: true
 end

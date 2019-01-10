@@ -267,6 +267,39 @@
                   },
                   "release_year": {
                     "type": "integer"
+                  },
+                  "movie_actors_attributes": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "person_id": {
+                          "type": "integer"
+                        }
+                      }
+                    }
+                  },
+                  "movie_directors_attributes": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "person_id": {
+                          "type": "integer"
+                        }
+                      }
+                    }
+                  },
+                  "movie_producers_attributes": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "person_id": {
+                          "type": "integer"
+                        }
+                      }
+                    }
                   }
                 }
               }
@@ -481,6 +514,57 @@
                   },
                   "release_year": {
                     "type": "integer"
+                  },
+                  "movie_actors_attributes": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "id": {
+                          "type": "integer"
+                        },
+                        "_destroy": {
+                          "type": "boolean"
+                        },
+                        "person_id": {
+                          "type": "integer"
+                        }
+                      }
+                    }
+                  },
+                  "movie_directors_attributes": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "id": {
+                          "type": "integer"
+                        },
+                        "_destroy": {
+                          "type": "boolean"
+                        },
+                        "person_id": {
+                          "type": "integer"
+                        }
+                      }
+                    }
+                  },
+                  "movie_producers_attributes": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "id": {
+                          "type": "integer"
+                        },
+                        "_destroy": {
+                          "type": "boolean"
+                        },
+                        "person_id": {
+                          "type": "integer"
+                        }
+                      }
+                    }
                   }
                 }
               }
@@ -605,6 +689,57 @@
                   },
                   "release_year": {
                     "type": "integer"
+                  },
+                  "movie_actors_attributes": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "id": {
+                          "type": "integer"
+                        },
+                        "_destroy": {
+                          "type": "boolean"
+                        },
+                        "person_id": {
+                          "type": "integer"
+                        }
+                      }
+                    }
+                  },
+                  "movie_directors_attributes": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "id": {
+                          "type": "integer"
+                        },
+                        "_destroy": {
+                          "type": "boolean"
+                        },
+                        "person_id": {
+                          "type": "integer"
+                        }
+                      }
+                    }
+                  },
+                  "movie_producers_attributes": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "id": {
+                          "type": "integer"
+                        },
+                        "_destroy": {
+                          "type": "boolean"
+                        },
+                        "person_id": {
+                          "type": "integer"
+                        }
+                      }
+                    }
                   }
                 }
               }

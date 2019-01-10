@@ -46,7 +46,10 @@ class MoviesDoc < ApiDoc
 
     request_body(:req, :json, data: {
       title: String,
-      release_year: Integer
+      release_year: Integer,
+      movie_actors_attributes:    [ { person_id: Integer } ],
+      movie_directors_attributes: [ { person_id: Integer } ],
+      movie_producers_attributes: [ { person_id: Integer } ]
     })
 
     response(200, 'Created movie', :json, data: {
@@ -73,7 +76,10 @@ class MoviesDoc < ApiDoc
 
     request_body(:opt, :json, data: {
       title: String,
-      release_year: Integer
+      release_year: Integer,
+      movie_actors_attributes:    [ { id: Integer, _destroy: 'boolean', person_id: Integer } ],
+      movie_directors_attributes: [ { id: Integer, _destroy: 'boolean', person_id: Integer } ],
+      movie_producers_attributes: [ { id: Integer, _destroy: 'boolean', person_id: Integer } ]
     })
 
     response(200, 'Updated movie', :json, data: {
