@@ -1,5 +1,5 @@
 class ActorsDoc < ApiDoc
-  route_base 'actors'
+  route_base 'api/v1/actors'
 
   api :index, 'GET all actors' do
     response(200, 'All actors', :json, data:

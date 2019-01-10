@@ -1,4 +1,4 @@
-class ProducersController < ApplicationController
+class Api::V1::ProducersController < ApplicationController
 
   # GET /producers
   def index

@@ -1,5 +1,5 @@
 class ProducersDoc < ApiDoc
-  route_base 'producers'
+  route_base 'api/v1/producers'
 
   api :index, 'GET all producers' do
     response(200, 'All producers', :json, data:

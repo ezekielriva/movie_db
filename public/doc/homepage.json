@@ -11,6 +11,9 @@
       "name": "Actors"
     },
     {
+      "name": "AuthTokens"
+    },
+    {
       "name": "Directors"
     },
     {
@@ -24,7 +27,7 @@
     }
   ],
   "paths": {
-    "/actors": {
+    "/api/v1/actors": {
       "get": {
         "summary": "GET all actors",
         "operationId": "Actors_Index",
@@ -76,7 +79,42 @@
         }
       }
     },
-    "/directors": {
+    "/api/v1/auth_tokens": {
+      "post": {
+        "summary": "Create a auth token",
+        "operationId": "AuthTokens_Create",
+        "tags": [
+          "AuthTokens"
+        ],
+        "responses": {
+          "200": {
+            "description": "Token created",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "integer"
+                    },
+                    "token": {
+                      "type": "string"
+                    },
+                    "iat": {
+                      "type": "string"
+                    },
+                    "exp": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/directors": {
       "get": {
         "summary": "GET all directors",
         "operationId": "Directors_Index",
@@ -128,7 +166,7 @@
         }
       }
     },
-    "/movies": {
+    "/api/v1/movies": {
       "get": {
         "summary": "GET all movies",
         "operationId": "Movies_Index",
@@ -325,7 +363,7 @@
         ]
       }
     },
-    "/movies/{id}": {
+    "/api/v1/movies/{id}": {
       "get": {
         "summary": "GET a movie",
         "operationId": "Movies_Show",
@@ -719,7 +757,7 @@
         ]
       }
     },
-    "/people": {
+    "/api/v1/people": {
       "get": {
         "summary": "GET all people",
         "operationId": "People_Index",
@@ -913,7 +951,7 @@
         ]
       }
     },
-    "/people/{id}": {
+    "/api/v1/people/{id}": {
       "get": {
         "summary": "GET a person",
         "operationId": "People_Show",
@@ -1298,7 +1336,7 @@
         ]
       }
     },
-    "/producers": {
+    "/api/v1/producers": {
       "get": {
         "summary": "GET all producers",
         "operationId": "Producers_Index",

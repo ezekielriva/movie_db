@@ -1,4 +1,4 @@
-class AuthTokensController < ApplicationController
+class Api::V1::AuthTokensController < ApplicationController
   before_action :set_auth_token, only: [:show, :update, :destroy]
 
   # GET /auth_tokens
@@ -18,7 +18,7 @@ class AuthTokensController < ApplicationController
     @auth_token = AuthToken.new(create_auth_token_params)
 
     if @auth_token.save
-      render json: @auth_token, status: :created, location: @auth_token
+      render json: @auth_token, status: :created
     else
       render json: @auth_token.errors, status: :unprocessable_entity
     end

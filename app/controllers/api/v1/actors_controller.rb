@@ -1,4 +1,4 @@
-class ActorsController < ApplicationController
+class Api::V1::ActorsController < ApplicationController
 
   # GET /actors
   def index

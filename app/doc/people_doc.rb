@@ -1,5 +1,5 @@
 class PeopleDoc < ApiDoc
-  route_base 'people'
+  route_base 'api/v1/people'
 
   components do
     bearer_auth :Token

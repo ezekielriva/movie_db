@@ -1,5 +1,5 @@
 class DirectorsDoc < ApiDoc
-  route_base 'directors'
+  route_base 'api/v1/directors'
 
   api :index, 'GET all directors' do
     response(200, 'All directors', :json, data:

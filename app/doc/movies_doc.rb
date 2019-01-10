@@ -1,5 +1,5 @@
 class MoviesDoc < ApiDoc
-  route_base 'movies'
+  route_base 'api/v1/movies'
 
   components do
     bearer_auth :Token
