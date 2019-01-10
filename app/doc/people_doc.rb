@@ -84,19 +84,9 @@ class PeopleDoc < ApiDoc
     })
 
     response(200, 'Updated person', :json, data: {
-      id: Integer,
       first_name: String,
       last_name: String,
-      alias: String,
-      movies_as_actor: [
-        { title: String, release_year: String }
-      ],
-      movies_as_director: [
-        { title: String, release_year: String }
-      ],
-      movies_as_producer: [
-        { title: String, release_year: String }
-      ]
+      alias: String
     })
 
     response(401, 'Unauthorized', :text, data: String)

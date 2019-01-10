@@ -1080,9 +1080,6 @@
                 "schema": {
                   "type": "object",
                   "properties": {
-                    "id": {
-                      "type": "integer"
-                    },
                     "first_name": {
                       "type": "string"
                     },
@@ -1091,48 +1088,6 @@
                     },
                     "alias": {
                       "type": "string"
-                    },
-                    "movies_as_actor": {
-                      "type": "array",
-                      "items": {
-                        "type": "object",
-                        "properties": {
-                          "title": {
-                            "type": "string"
-                          },
-                          "release_year": {
-                            "type": "string"
-                          }
-                        }
-                      }
-                    },
-                    "movies_as_director": {
-                      "type": "array",
-                      "items": {
-                        "type": "object",
-                        "properties": {
-                          "title": {
-                            "type": "string"
-                          },
-                          "release_year": {
-                            "type": "string"
-                          }
-                        }
-                      }
-                    },
-                    "movies_as_producer": {
-                      "type": "array",
-                      "items": {
-                        "type": "object",
-                        "properties": {
-                          "title": {
-                            "type": "string"
-                          },
-                          "release_year": {
-                            "type": "string"
-                          }
-                        }
-                      }
                     }
                   }
                 }
@@ -1201,9 +1156,6 @@
                 "schema": {
                   "type": "object",
                   "properties": {
-                    "id": {
-                      "type": "integer"
-                    },
                     "first_name": {
                       "type": "string"
                     },
@@ -1212,48 +1164,6 @@
                     },
                     "alias": {
                       "type": "string"
-                    },
-                    "movies_as_actor": {
-                      "type": "array",
-                      "items": {
-                        "type": "object",
-                        "properties": {
-                          "title": {
-                            "type": "string"
-                          },
-                          "release_year": {
-                            "type": "string"
-                          }
-                        }
-                      }
-                    },
-                    "movies_as_director": {
-                      "type": "array",
-                      "items": {
-                        "type": "object",
-                        "properties": {
-                          "title": {
-                            "type": "string"
-                          },
-                          "release_year": {
-                            "type": "string"
-                          }
-                        }
-                      }
-                    },
-                    "movies_as_producer": {
-                      "type": "array",
-                      "items": {
-                        "type": "object",
-                        "properties": {
-                          "title": {
-                            "type": "string"
-                          },
-                          "release_year": {
-                            "type": "string"
-                          }
-                        }
-                      }
                     }
                   }
                 }
