@@ -81,6 +81,7 @@ class MovieForm extends Component {
             <label>Title</label>
             <input
               name="title"
+              type="text"
               value={title}
               onChange={ (e) => this.changeMovieAttr(e) }
             />

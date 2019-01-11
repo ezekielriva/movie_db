@@ -9,9 +9,9 @@ class MovieList extends Component {
     })
 
     return (
-      <div className="MovieList">
-        { items }
-      </div>
+      <table className="MovieList">
+        <tbody>{ items }</tbody>
+      </table>
     );
   }
 }

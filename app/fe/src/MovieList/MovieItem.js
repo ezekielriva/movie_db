@@ -6,12 +6,14 @@ class MovieItem extends Component {
     const { movie, onClick, onDelete } = this.props;
 
     return (
-      <div className="MovieItem" onClick={ () => onClick(movie) }>
-        { movie.title } - { movie.release_year }
-        <div className="MovieItem-delete" onClick={ () => onDelete(movie) }>
-          <i className="material-icons">delete</i>
-        </div>
-      </div>
+      <tr className="MovieItem" onClick={ () => onClick(movie) }>
+        <td>{ movie.title } - { movie.release_year }</td>
+        <td>
+          <span className="MovieItem-delete" onClick={ () => onDelete(movie) }>
+            <i className="material-icons">delete</i>
+          </span>
+          </td>
+      </tr>
     );
   }
 }

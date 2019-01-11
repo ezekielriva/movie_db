@@ -5,8 +5,10 @@ import Movie from './Movie';
 import MovieForm from './MovieForm';
 import PersonForm from './PersonForm';
 import PersonList from './PersonList';
-import './../node_modules/materialize-css/dist/css/materialize.css';
 import NavBar from './NavBar';
+
+console.log(process.env);
+const API_HOST = process.env.NODE_ENV !== 'production' ? "http://localhost:3000" : "https://serene-dawn-55049.herokuapp.com"
 
 class App extends Component {
   constructor(props) {
@@ -20,7 +22,7 @@ class App extends Component {
   }
 
   refreshAuthToken() {
-    fetch('http://localhost:3000/api/v1/auth_tokens', { method: 'POST' })
+    fetch(`${API_HOST}/api/v1/auth_tokens`, { method: 'POST' })
       .then( (response) => response.json() )
       .then( (json) => this.setState({ auth: json  }) )
   }
@@ -28,11 +30,11 @@ class App extends Component {
   componentDidMount() {
     this.refreshAuthToken();
 
-    fetch('http://localhost:3000/api/v1/movies')
+    fetch(`${API_HOST}/api/v1/movies`)
       .then( (response) => response.json() )
       .then( (json) => this.setState({movies: json}) )
 
-    fetch('http://localhost:3000/api/v1/people')
+    fetch(`${API_HOST}/api/v1/people`)
       .then( (response) => response.json() )
       .then( (json) => this.setState({people: json}) )
   }
@@ -42,7 +44,7 @@ class App extends Component {
   }
 
   createMovie(movie) {
-    fetch('http://localhost:3000/api/v1/movies', {
+    fetch(`${API_HOST}/api/v1/movies`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
