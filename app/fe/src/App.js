@@ -7,7 +7,6 @@ import PersonForm from './PersonForm';
 import PersonList from './PersonList';
 import NavBar from './NavBar';
 
-console.log(process.env);
 const API_HOST = process.env.NODE_ENV === 'production' ? "https://serene-dawn-55049.herokuapp.com" : "http://localhost:3000"
 
 class App extends Component {
@@ -59,7 +58,7 @@ class App extends Component {
   }
 
   createPerson(person) {
-    fetch('http://localhost:3000/api/v1/people', {
+    fetch(`${API_HOST}/api/v1/people`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -74,7 +73,7 @@ class App extends Component {
   }
 
   deleteMovie(movie) {
-    fetch(`http://localhost:3000/api/v1/movies/${movie.id}`, {
+    fetch(`${API_HOST}/api/v1/movies/${movie.id}`, {
       method: 'DELETE',
       headers: {
         'Content-Type': 'application/json',
