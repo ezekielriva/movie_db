@@ -8,7 +8,7 @@ import PersonList from './PersonList';
 import NavBar from './NavBar';
 
 console.log(process.env);
-const API_HOST = process.env.NODE_ENV !== 'production' ? "http://localhost:3000" : "https://serene-dawn-55049.herokuapp.com"
+const API_HOST = process.env.NODE_ENV === 'production' ? "https://serene-dawn-55049.herokuapp.com" : "http://localhost:3000"
 
 class App extends Component {
   constructor(props) {
