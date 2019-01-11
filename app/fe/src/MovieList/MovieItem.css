@@ -1,0 +1,11 @@
+.MovieItem {
+  cursor: pointer;
+}
+
+.MovieItem:hover {
+  background: lightgray;
+}
+
+.MovieItem-delete {
+  float: right;
+}

@@ -1,0 +1,7 @@
+.PersonSelect-option {
+  cursor: pointer;
+}
+
+.PersonSelect-option-selected {
+  background: lightgrey;
+}
